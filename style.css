@@ -1,8 +1,3 @@
-/** {
-    padding: 0;
-    margin: 0;
-}*/
-
 body{
     background-color: rgb(206, 206, 206);
     font-family: 'PT Serif', serif;
@@ -117,3 +112,29 @@ body{
 }
 
 
+/*MEDIA QUERIES*/
+
+/*iPad*/
+@media all and (max-width: 768px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+    }
+    
+    /*IMAGE*/
+    #image-container{
+        width: 70%;
+        background-color: #fff;
+        box-sizing: border-box;
+        height: 20rem;
+        margin-top: -55px;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 60%;
+        margin-top: 20px;
+    }
+    
+}
