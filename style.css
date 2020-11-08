@@ -1,0 +1,119 @@
+/** {
+    padding: 0;
+    margin: 0;
+}*/
+
+body{
+    background-color: rgb(206, 206, 206);
+    font-family: 'PT Serif', serif;
+}
+
+/*MAIN TITLE*/
+#main-title h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 0px;
+}
+
+/*IMAGE*/
+#image-container{
+    width: 70%;
+    display: flex;
+    flex-flow: row;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 650px;
+    align-items: center;
+}
+
+#image {
+    /*max-width: 100%;
+    max-height: 100%;*/
+    height: 90%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#img-caption {
+    text-align: center;
+    color: #000;
+    font-style: italic;
+    margin-top: -19px;
+}
+
+/*TEXT*/
+#tribute-info{
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 20px;
+}
+
+/*------------- SOCIAL MEDIA ICONS ----------*/
+.social-menu {
+    margin: 0 auto;
+    width: 50%;/*
+    background-color: red;*/
+}
+
+.social-menu ul {
+    position: relative;
+    display: flex;
+    left: 10%;
+}
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fa {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+}
+
+.social-menu ul li .fa:hover {
+    color: #fff;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu ul li a:hover {
+    transform: translate(0px, -10px);
+}
+
+/*facebook color*/
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+/*instagram color*/
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #e4405f;
+}
+/*twitter color*/
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #55acee;
+}
+/*website color*/
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #131418;
+}
+/*youtube color*/
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #cd201f;
+}
+
+
