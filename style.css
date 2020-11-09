@@ -1,17 +1,19 @@
 body{
     background-color: rgb(206, 206, 206);
     font-family: 'PT Serif', serif;
+    color:#000;
 }
 
-/*MAIN TITLE*/
+/*--------------------------------------MAIN TITLE*/
 #main-title h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: 0px;
+    margin-top: 0;
 }
 
-/*IMAGE*/
+/*----------------------------------------IMAGE*/
 #image-container{
     width: 70%;
     display: flex;
@@ -19,13 +21,12 @@ body{
     background-color: #fff;
     box-sizing: border-box;
     margin: 0 auto;
-    height: 650px;
+    height: 43rem;
     align-items: center;
+    margin-top: -4rem;
 }
 
 #image {
-    /*max-width: 100%;
-    max-height: 100%;*/
     height: 90%;
     width: 95%;
     margin: 0 auto;
@@ -35,27 +36,30 @@ body{
     text-align: center;
     color: #000;
     font-style: italic;
-    margin-top: -19px;
+    margin-top: -22px;
+    font-size: 1.1rem;
 }
 
-/*TEXT*/
+/* ----------------------------------------- TEXT */
 #tribute-info{
     margin: 0 auto;
     width: 65%;
     margin-top: 20px;
+    font-size: 1.2rem;
 }
 
-/*------------- SOCIAL MEDIA ICONS ----------*/
+/*------------------------------------------ SOCIAL MEDIA ICONS */
 .social-menu {
     margin: 0 auto;
-    width: 50%;/*
-    background-color: red;*/
+    width: auto;
 }
 
 .social-menu ul {
     position: relative;
+    width: 65%;
     display: flex;
-    left: 10%;
+    left: 15%;
+    justify-content : center;
 }
 
 .social-menu ul li {
@@ -112,29 +116,453 @@ body{
 }
 
 
-/*MEDIA QUERIES*/
+/* ----------------------------------------------- MEDIA QUERIES */
 
-/*iPad*/
+/*----------------------------------------*/
+/* iPad 1024 (1024px and before iPad) */
+@media all and (max-width: 1024px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 9rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: 95%;
+        height: 50rem;
+        margin-top: -7rem;
+    }
+
+    #img-caption {
+        margin-top: -35px;
+        font-size: 1.9rem;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 87%;
+    }
+
+    #tribute-info p{
+        font-size: 2.3rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 5rem;
+        line-height: 7.2rem;
+    }
+
+    .social-menu ul li a {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 40%;
+    }
+}
+
+/*----------------------------------------*/
+/* iPad 768 (768px and before Surface Duo) */
 @media all and (max-width: 768px){
 
     /*MAIN TITLE*/
     #main-title h1{
         margin-top: 0;
+        font-size: 5.5rem;
     }
-    
+
     /*IMAGE*/
     #image-container{
-        width: 70%;
-        background-color: #fff;
-        box-sizing: border-box;
-        height: 20rem;
+        width: 95%;
+        height: 35rem;
         margin-top: -55px;
+    }
+
+    #img-caption {
+        margin-top: -26px;
+        font-size: 1.4rem;
     }
 
     /*TEXT*/
     #tribute-info{
-        width: 60%;
-        margin-top: 20px;
+        width: 87%;
     }
+
+    #tribute-info p{
+        font-size: 1.5rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 3rem;
+        line-height: 80px;
+    }
+
+    .social-menu ul li a {
+        width: 80px;
+        height: 80px;
+        border-radius: 40%;
+    }
+}
+
+/*----------------------------------------*/
+/* Surface Duo 540 (540px and before iPhone 6/7/8 Plus) */
+@media only screen and (max-width: 540px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 4.5rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: 95%;
+        height: 27rem;
+        margin-top: -50px;
+    }
+
+    #img-caption {
+        margin-top: -20px;
+        font-size: 1.1rem;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 87%;
+    }
+
+    #tribute-info p{
+        font-size: 1.3rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 85%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.9rem;
+        line-height: 50px;
+    }
+
+    .social-menu ul li a {
+        width: 50px;
+        height: 50px;
+        border-radius: 40%;
+    }
+
+}
+
+
+/*----------------------------------------*/
+/* iPhone 6/7/8 Plus 414 (414px and before Pixel 2 & Pixel 2 XL) */
+@media only screen and (max-width: 414px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 3.5rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: auto;
+        height: 23rem;
+        margin-top: -35px;
+    }
+
+    #img-caption {
+        margin-top: -17px;
+        font-size: 0.9rem;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 87%;
+    }
+
+    #tribute-info p{
+        font-size: 1.2rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 83%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.9rem;
+        line-height: 45px;
+    }
+
+    .social-menu ul li a {
+        width: 45px;
+        height: 45px;
+        border-radius: 40%;
+    }
+}
+
+
+/*----------------------------------------*/
+/* Pixel 2 & Pixel 2 XL 411 (411px and before iPhone 6/7/8/X) */
+@media only screen and (max-width: 411px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 3.5rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: auto;
+        height: 23rem;
+        margin-top: -35px;
+    }
+
+    #img-caption {
+        margin-top: -17px;
+        font-size: 0.9rem;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 87%;
+    }
+
+    #tribute-info p{
+        font-size: 1.2rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 83%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.9rem;
+        line-height: 45px;
+    }
+
+    .social-menu ul li a {
+        width: 45px;
+        height: 45px;
+        border-radius: 40%;
+    }
+}
+
+
+/*----------------------------------------*/
+/* iPhone 6/7/8/X 375 (375px and before Moto G4 & GalaxyS5) */
+@media only screen and (max-width: 375px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: auto;
+        height: 20rem;
+        margin-top: -35px;
+    }
+
+    #img-caption {
+        margin-top: -17px;
+        font-size: 0.85rem;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 85%;
+    }
+
+    #tribute-info p{
+        font-size: 1.3rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 83%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.9rem;
+        line-height: 45px;
+    }
+
+    .social-menu ul li a {
+        width: 45px;
+        height: 45px;
+        border-radius: 40%;
+    }
+}
+
+
+/*----------------------------------------*/
+/* Moto G4 & GalaxyS5 360 (360px and before iPhone 5/SE) */
+@media only screen and (max-width: 360px){
+
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: auto;
+        height: 45vh;
+        margin-top: -30px;
+    }
+
+    #img-caption {
+        margin-top: -15px;
+        font-size: 0.8rem;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 85%;
+    }
+
+    #tribute-info p{
+        font-size: 1.1rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 85%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.9rem;
+        line-height: 40px;
+    }
+
+    .social-menu ul li a {
+        width: 40px;
+        height: 40px;
+        border-radius: 40%;
+    }
+
+}
+
+
+/*----------------------------------------*/
+/* iPhone 5/SE (320px and before GalaxyFold) */
+@media only screen and (max-width: 320px){
     
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: auto;
+        height: 40vh;
+        margin-top: -30px;
+    }
+
+    #img-caption {
+        margin-top: -12px;
+        font-size: 10px;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 85%;
+    }
+
+    #tribute-info p{
+        font-size: 0.9rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 75%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .social-menu ul li a {
+        width: 35px;
+        height: 35px;
+        border-radius: 40%;
+    }
+}
+
+
+/*---------------------------------------*/
+/* Galaxy Fold (280px and down) */
+@media only screen and (max-width: 280px) {
+    
+    /*MAIN TITLE*/
+    #main-title h1{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+
+    /*IMAGE*/
+    #image-container{
+        width: auto;
+        height: 35vh;
+        margin-top: -20px;
+    }
+
+    #img-caption {
+        margin-top: -11px;
+        font-size: 10px;
+    }
+
+    /*TEXT*/
+    #tribute-info{
+        width: 90%;
+    }
+
+    #tribute-info p{
+        font-size: 1rem;
+    }
+
+    /*SOCIAL MEDIA ICONS*/
+    .social-menu {
+        margin-left: 0;
+        width: 73%;
+    }
+
+    .social-menu ul li .fa {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .social-menu ul li a {
+        width: 30px;
+        height: 30px;
+        border-radius: 40%;
+    }
 }
