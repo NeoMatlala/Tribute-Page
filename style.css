@@ -118,7 +118,7 @@ body{
 
 /* ----------------------------------------------- MEDIA QUERIES */
 
-/*----------------------------------------*/
+
 /* iPad 1024 (1024px and before iPad) */
 @media all and (max-width: 1024px){
 
@@ -167,7 +167,7 @@ body{
     }
 }
 
-/*----------------------------------------*/
+
 /* iPad 768 (768px and before Surface Duo) */
 @media all and (max-width: 768px){
 
@@ -216,7 +216,7 @@ body{
     }
 }
 
-/*----------------------------------------*/
+
 /* Surface Duo 540 (540px and before iPhone 6/7/8 Plus) */
 @media only screen and (max-width: 540px){
 
@@ -267,7 +267,6 @@ body{
 }
 
 
-/*----------------------------------------*/
 /* iPhone 6/7/8 Plus 414 (414px and before Pixel 2 & Pixel 2 XL) */
 @media only screen and (max-width: 414px){
 
@@ -317,7 +316,6 @@ body{
 }
 
 
-/*----------------------------------------*/
 /* Pixel 2 & Pixel 2 XL 411 (411px and before iPhone 6/7/8/X) */
 @media only screen and (max-width: 411px){
 
@@ -367,7 +365,6 @@ body{
 }
 
 
-/*----------------------------------------*/
 /* iPhone 6/7/8/X 375 (375px and before Moto G4 & GalaxyS5) */
 @media only screen and (max-width: 375px){
 
@@ -417,7 +414,6 @@ body{
 }
 
 
-/*----------------------------------------*/
 /* Moto G4 & GalaxyS5 360 (360px and before iPhone 5/SE) */
 @media only screen and (max-width: 360px){
 
@@ -468,7 +464,6 @@ body{
 }
 
 
-/*----------------------------------------*/
 /* iPhone 5/SE (320px and before GalaxyFold) */
 @media only screen and (max-width: 320px){
     
@@ -518,7 +513,6 @@ body{
 }
 
 
-/*---------------------------------------*/
 /* Galaxy Fold (280px and down) */
 @media only screen and (max-width: 280px) {
     

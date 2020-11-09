@@ -8,7 +8,7 @@ Built using HTML5 and CSS3.
 - CSS3 box-shadow & hover properties 
 - CSS3 position property
 - CSS3 transform property
-- Responsive web design, i.e. Media Queries
+- Responsive web design, i.e. Media Queries for 9 different screen sizes
 
 ## See it live
 
